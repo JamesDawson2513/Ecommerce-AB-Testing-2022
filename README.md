@@ -7,24 +7,14 @@ My first AB test project using the data from https://www.kaggle.com/datasets/put
 
 The company has developed a new webpage and wants to determine if it has resulted in an increase in paying users. To do this, we conduct an AB test.
 
+We have two equally-sized gropus:
+* **Control Group (A):** Presented with the old webpage
+* **Treatment Group (B):** Presented with the new webpage
 
-
-
-
-
-
-The company has developed a new webpage to increase the number of paying users for their product. They are conducting an AB test to see the results of this new page. Two equally-sized groups are created as control and treatment groups, labeled A and B. The treatment group (B) is presented with the new webpage while the control group (A) is presented with the old one, and the experiment is run. Data is collected for both groups, and then hypothesis testing is applied to determine if the difference is significant or not.
-
-## Introduction
-The company has developed a new webpage to increase the number of paying users for their product. To evaluate its effectiveness, an A/B test was conducted comparing the new webpage against the existing one. 
-
-Two equally-sized groups were created:
-* **Control Group (A):** Presented with the old webpage[cite: 1].
-* **Treatment Group (B):** Presented with the new webpage[cite: 1].
-
-Data was collected for both groups to monitor conversion rates, and hypothesis testing was applied to determine if the difference in performance is statistically significant.
+Data was collected for both gropus to monitor conversion rates, and we apply hypothesis tests to arrive at a conclusion as to whether the change is statistically significant.
 
 ---
+
 
 ## About the Dataset
 The dataset contains information regarding user interactions during the A/B test. 
