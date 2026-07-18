@@ -15,14 +15,15 @@ Data was collected for both gropus to monitor conversion rates, and we apply hyp
 
 ---
 
-
 ## About the Dataset
 The dataset contains information regarding user interactions during the A/B test. 
-* **`user_id`:** Unique user identifier[cite: 1].
-* **`timestamp`:** Time of the interaction[cite: 1].
-* **`group`:** Specifies whether the user is in the `treatment` or `control` group[cite: 1].
-* **`landing_page`:** Specifies whether the user saw the `old_page` or `new_page`[cite: 1].
-* **`converted`:** Sign-up status after viewing the page (0 for no, 1 for yes)[cite: 1].
+* **`user_id`:** Unique user identifier
+* **`timestamp`:** Time of the interaction
+* **`group`:** Specifies whether the user is in the `treatment` or `control` group
+* **`landing_page`:** Specifies whether the user saw the `old_page` or `new_page`
+* **`converted`:** Sign-up status after viewing the page (0 for no, 1 for yes)
+
+
 
 ---
 
@@ -33,11 +34,21 @@ We want to test if the new page increased the number of paying users.
 * **$H_0$:** There is no statistically significant difference between the old page and the new page.
 * **$H_1$:** There is a statistically significant difference between the old page and the new page.
 
+### 2. Data Normality
+To determine which statistical test to use, we check the distribution and variance of our data.
+
+**Normality Assumption**
+* **$H_0$:** The data is normally distributed
+* **$H_1$:** The data isn't normally distributed
+
+
+
+
 ### 2. Exploratory Data Analysis (EDA) & Cleaning
 Before testing, the data was cleaned and explored:
-* Duplicate `user_id` records were dropped to ensure data integrity[cite: 1].
-* The mean conversion rate for the control group (`old_page`) was roughly 12.017%[cite: 1].
-* The mean conversion rate for the treatment group (`new_page`) was roughly 11.872%[cite: 1].
+* Duplicate `user_id` records were dropped to ensure data integrity
+* The mean conversion rate for the control group (`old_page`) was roughly 12.017%
+* The mean conversion rate for the treatment group (`new_page`) was roughly 11.872%
 
 ### 3. Assumption Checks
 To determine the correct statistical test, we must check the distribution and variance of our data.
